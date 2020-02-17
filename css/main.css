@@ -1,0 +1,101 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --accent-dark: #BB4C3A;
+  --accent-light: #6FB26F;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 5vmin;
+  color: grey;
+}
+
+#guess {
+  font-size: 5vmin;
+  letter-spacing: 2vmin;
+  color: grey;
+  text-align: center;
+}
+
+header {
+  background-color: var(--dark-accent);
+  color: white;
+  font-size: 5vmin;
+  padding: 2vmin;
+  text-align: center;
+  width: 100%;
+}
+
+#gallows {
+  width: 11.25vmin;
+  height: 30vmin;
+  background-size: cover;
+  background-image: url(../imgs/hangman.png);
+}
+
+#letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10vmin;
+}
+
+#letters button {
+  font-size: 2vmin;
+  font-weight: bold;
+  width: 5vmin;
+  height: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5vmin;
+  border: .4vmin solid grey;
+  color: grey;
+  border-radius: 1vmin;
+  outline: none;
+}
+
+/* #letters button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+} */
+
+#letters button.wrong {
+  background-color: var(--accent-dark);
+  color: grey;
+  cursor: not-allowed;
+}
+
+#letters button.correct {
+  background-color: var(--accent-light);
+  color: grey;
+  cursor: not-allowed;
+}
+
+#replay {
+  font-size: 2vmin;
+  font-weight: bold;
+  padding: 2vmin;
+  margin-top: 4vmin;
+  border: .3vmin solid grey;
+  color: grey;
+  border-radius: 2vmin;
+  outline: none;
+  cursor: pointer;
+}
+
+#replay:hover {
+  background-color: grey;
+  color: white;
+}
