@@ -8,4 +8,4 @@
 1. `git fetch --all`
 2. `git reset --hard origin/master`
 
-The above commands will result in your local repo mirroring the remote's code exactly.  Any changes you've made to files, committed or not, will be replaced by the files in the remote (origin).
+Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
